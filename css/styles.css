@@ -1,0 +1,417 @@
+:root {
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  
+    /* Colors */
+    --primary-brand: #4d5ae5; /*Iris clr*/ /*CTAs focused/active states, links*/
+    --pressed-state: #404bbf; /*Ocean clr*/ /*CTAs*/
+    --color-navy-blue: #2e2f42; /*Navy Blue clr*/ /*overlays, shadows, headings*/
+    --valid-clr: #31d0aa; /*Green clr*/ /*Valid fields, Success messages*/
+    --text-clr: #434455; /*Slate clr*/ /*Text*/
+    --color-light-slate: #8e8f99; /*Helper text, Deemphasized text*/
+    --color-cornflower: #e7e9fc; /*Accent color, Hairlines, Subtle backgrounds*/
+    --color-cloud: #f4f4fd; /*Light mode backgrounds, Light mode Dialogs/alerts*/
+    --overlay-clr: #2e2f42; /*Navy Blue Modal clr*/ /*Overlay*/
+  
+  /* Backgrounds */
+    --grey-bg: #2e2f42; /*Grey*/ /*Hero image background*/
+    --white-bg: #ffffff; /*White*/ /*Header, team card background*/
+    --dairy-bg: #fcfcfc; /*Dairy*/ /*Modal background*/
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: none;
+    background-color: var(--white-bg);
+    color: var(--text-clr);
+  }
+  
+  
+  /**
+    |============================
+    | Header Section
+    |============================
+  */
+  
+  .header {
+    background-color: var(--white-bg);
+  }
+  
+  /* .link-logo is the same for footer section */
+  .link-logo {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-brand);
+  }
+  
+  .link-title-primary {
+    color: var(--color-navy-blue);
+  }
+  
+  .list {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    list-style: none;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: var(--color-navy-blue);
+  }
+  
+  /* властивості :header та :hover */
+  .nav-item:hover {
+    color: var(--pressed-state);
+  }
+  
+  .nav-item:focus {
+    color: var(--pressed-state);
+  }
+  /* властивості :header та :hover */
+  
+  .link {
+  }
+  
+  .contact-info {
+    font-style: normal;
+  }
+  
+  .list-contacts {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--text-clr);
+    list-style: none;
+  }
+  
+  .contact {
+    text-decoration: none;
+    color: var(--text-clr);
+  }
+  
+  /* властивості :header та :hover */
+  .contact:hover {
+    color: var(--pressed-state);
+  }
+  
+  .contact:focus {
+    color: var(--pressed-state);
+  }
+  /* властивості :header та :hover */
+  
+  
+  /**
+    |============================
+    | Hero Section
+    |============================
+  */
+  
+  .hero-section {
+    background-color: var(--color-navy-blue);
+  }
+  
+  .main-title {
+    font-family: var(--primary-brand);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-bg);
+    text-align: center;
+  }
+  
+  .order-button {
+    font-family: var(--primary-brand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background: var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-bg);
+    cursor: pointer;
+  }
+  
+  /* Hero Section, властивості :header та :hover */
+  
+  .order-button:hover {
+    background: var(--pressed-state);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  
+  .order-button:focus {
+    background: var(--pressed-state);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  
+  /**
+    |============================
+    | Services section
+    |============================
+  */
+  
+  .hidden-title {
+  }
+  
+  .list-services {
+    list-style: none;
+  }
+  
+  .list {
+  }
+  
+  .serv-title {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+  }
+  
+  .serv-desc {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-clr);
+  }
+  
+  /**
+    |============================
+    | What Are We Doing Section
+    |============================
+  */
+  
+  .title-examples {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+    text-align: center;
+  }
+  
+  .list-examples {
+    list-style: none;
+  }
+  
+  .list {
+  }
+  
+  /**
+    |============================
+    | Team Section
+    |============================
+  */
+  
+  .team-section {
+    background-color: var(--color-cloud);
+  }
+  
+  .title-team {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+    text-align: center;
+  }
+  
+  .list-team {
+    list-style: none;
+  }
+  
+  .list {
+  }
+  
+  .team-frame {
+    background-color: var(--white-bg);
+  }
+  
+  .employee-name {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+  }
+  
+  .duty {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--text-clr);
+  }
+  
+  /**
+    |============================
+    | Footer Section
+    |============================
+  */
+  
+  .footer {
+    background-color: var(--color-navy-blue);
+  }
+  
+  .link-logo {
+  }
+  
+  .link-title-secondary {
+    color: var(--color-cloud);
+  }
+  
+  .footer-text {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-cloud);
+  }
+  
+  /**
+    |============================
+    | portfolio.html
+    |============================
+  */
+  
+  /* Header */
+  .header {
+  }
+  .link-logo {
+  }
+  .link-title-primary {
+  }
+  .list {
+  }
+  .nav-item {
+  }
+  .link {
+  }
+  .contact-info {
+  }
+  .list-contacts {
+  }
+  .contact {
+  }
+  
+  /* Filter section */
+  .list-filter {
+    list-style: none;
+  }
+  
+  .list {
+  }
+  
+  .filter-button {
+    background-color: var(--color-cloud);
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand);
+    cursor: pointer;
+  }
+  
+  /* Buttons Section, властивості :header та :hover */
+  
+  .filter-button:hover {
+    background: var(--pressed-state);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-bg);
+  }
+  
+  .filter-button:focus {
+    background: var(--pressed-state);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-bg);
+  }
+  
+  
+  /* Examples Section */
+  .list-ex-port {
+    list-style: none;
+  }
+  
+  .list {
+  }
+  
+  .serv-ex-title {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+  }
+  
+  .serv-ex-desc {
+    font-family: var(--primary-brand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--text-clr);
+  }
+  
+  .link-project {
+    text-decoration: none;
+  }
+  
+  .link {
+  }
+  
+  /* Footer Section */
+  .footer {
+  }
+  .link-logo {
+  }
+  .link-title-secondary {
+  }
+  .footer-text {
+  }
